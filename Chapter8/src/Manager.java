@@ -30,6 +30,6 @@ public class Manager extends Employee
 	{
 		return(super.toString() + ", manager");
 	}
-	
+	//
 	
 }
