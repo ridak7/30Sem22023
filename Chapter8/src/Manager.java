@@ -26,10 +26,11 @@ public class Manager extends Employee
 		return payEarned;
 	}
 	
-	public String toString()
+	public String toString()//prints manager object
 	{
-		return(super.toString() + ", manager");
+		return(super.toString() + ", manager" + " "+
+						"Yearly Salary: "+ yearlySalary);
 	}
-	//
+	
 	
 }
