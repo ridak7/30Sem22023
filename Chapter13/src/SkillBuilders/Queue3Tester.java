@@ -13,7 +13,7 @@ public class Queue3Tester
 		q3.enqueue("Brown");
 		q3.enqueue("Yellow");
 		
-		System.out.println("Front of q2: "+ q3.front());
+		System.out.println("Front of q2: "+ q3.front());//
 		System.out.println("Items in q2: "+ q3.size());
 		
 		System.out.println("Removing front item: "+ q3.dequeue());
