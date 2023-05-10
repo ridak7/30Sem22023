@@ -66,24 +66,24 @@ public class LinkedList
 		
 	}
 	
-	public String toString()
+	public String toString() 
 	{
 		Node current = head;
 		String listString;
 		
-		if(current != null)
+		if (current != null) 
 		{
 			listString = current.getData() + "\n";
-			while(current.getData() != null)
+			while (current.getNext() != null) 
 			{
 				current = current.getNext();
 				listString += current.getData() + "\n";
 			}
-			return listString;
-		}
-		else
+			return(listString);
+		} 
+		else 
 		{
-			return("There are no items in the list");
+			return("There are no items in list.");
 		}
 	}
 	
