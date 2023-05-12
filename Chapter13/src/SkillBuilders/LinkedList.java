@@ -5,7 +5,7 @@ public class LinkedList
 	private Node head;
 	
 	
-	public LinkedList()
+	public LinkedList()//Constructor Method
 	{
 		head = null;
 	}
@@ -17,6 +17,34 @@ public class LinkedList
 		newNode.setNext(head);
 		head = newNode;
 	}
+	
+	
+	//Linked List part 2 of 3 task
+	//Add a node to the end of the linked list
+	public void addAtEnd(String str)
+	{
+		Node newNode = new Node(str);
+		Node current = head;
+		
+		if(head == null)
+		{
+			newNode.setNext(head);
+			head = newNode;
+		}
+		else
+		{
+			while(current.getNext() != null)
+			{
+				current = current.getNext();
+			}
+			current.setNext(newNode);
+		}
+	}
+	
+	
+	
+	
+	
 	
 	//Deletes a node in the linked list
 	//The first node containing "str" has been deleted
@@ -65,6 +93,14 @@ public class LinkedList
 		}
 		
 	}
+	
+	//Linked List part 3 of 3 task
+	public void makeEmpty()
+	{
+		head = null;
+	}
+	
+	
 	
 	public String toString() 
 	{
