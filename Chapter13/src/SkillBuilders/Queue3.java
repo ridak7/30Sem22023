@@ -20,6 +20,12 @@ public class Queue3
 		return data.get(front);
 	}
 	
+	public Object rear()
+	{
+		return data.get(rear);
+	}
+	
+	
 	public void makeEmpty()
 	{
 		front = -1;
@@ -60,7 +66,7 @@ public class Queue3
 		}
 		else
 		{
-			rear = -1;
+			rear -= 1;
 		}
 		
 		return (item);
